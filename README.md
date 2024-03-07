@@ -8,7 +8,9 @@ This is still WIP, maybe I'll enrich the functionality.
 
 - Fetch the repository.
 
-* Run `npm run tauri build` in the root directory.
+- Run `[npm/pnpm/yarn] install` in the root directory.
+
+* Run `npm run tauri build`.
 
 
 

@@ -34,7 +34,7 @@ impl GwentController {
     }
 
     pub async fn get_eastern_decks(&self, offset: u16, limit: u16) -> Decks {
-        let probably_cached = self.cache.get_guides_from_cache(offset, limit);
+        let _probably_cached = self.cache.get_guides_from_cache(offset, limit);
         let json = self.api.get_guides(offset, limit).await.unwrap()
             .json::<Decks>().await.unwrap()
             .guides; 
@@ -45,5 +45,11 @@ impl GwentController {
             .cloned()
             .collect();
         Decks{guides: filtered}
+    }
+
+    pub async fn get_specific_deck(&self, id: &str) {
+        let _probably_cached = todo!();
+        let json = self.api.get_deck(id).await.unwrap()
+            .json::<Deck>
     }
 }

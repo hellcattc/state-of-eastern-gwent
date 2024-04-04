@@ -1,7 +1,22 @@
-# Tauri + Preact + Typescript
+# State of Eastern Gwent
 
-This template should help get you started developing with Tauri, Preact and Typescript in Vite.
+Now you can check out the latest masterpiece decks from the Chinese masters of the game in a few of clicks.
 
-## Recommended IDE Setup
+This is still WIP, maybe I'll enrich the functionality.
 
-- [VS Code](https://code.visualstudio.com/) + [Tauri](https://marketplace.visualstudio.com/items?itemName=tauri-apps.tauri-vscode) + [rust-analyzer](https://marketplace.visualstudio.com/items?itemName=rust-lang.rust-analyzer)
+# Building
+
+- Fetch the repository.
+
+- Run `[npm/pnpm/yarn] install` in the root directory.
+
+* Run `npm run tauri build`.
+
+# Preview
+
+![image](https://github.com/hellcattc/state-of-eastern-gwent/assets/57759639/4a72eb29-2f34-4b37-b518-95b0213477ee)
+
+
+
+
+

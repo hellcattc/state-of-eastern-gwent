@@ -13,7 +13,7 @@ const GuideList = () => {
     })();
   }, []);
 
-  return <div>{guides.map((el) => Guide(el))}</div>;
+  return <div>{guides.map((el) => <Guide guideData={el} />)}</div>;
 };
 
 export default GuideList;

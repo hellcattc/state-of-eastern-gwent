@@ -1,6 +1,10 @@
 import { ListGuide } from "../api/types";
 
-const Guide = (guideData: ListGuide) => {
+interface GuideProps {
+  guideData: ListGuide
+}
+
+const Guide = ({guideData}: GuideProps) => {
   return (
     <>
       <a
@@ -8,8 +12,8 @@ const Guide = (guideData: ListGuide) => {
         target="_blank"
       >
         <div className="p-5 my-10 border border-black rounded">
-          <p>{guideData.id}</p>
-          <p>{guideData.created}</p>
+          <p>ID: {guideData.id}</p>
+          <p>Date: {guideData.created}</p>
           <p className="mt-3">{guideData.name}</p>
         </div>
       </a>

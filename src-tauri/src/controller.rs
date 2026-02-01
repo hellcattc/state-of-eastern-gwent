@@ -48,8 +48,12 @@ impl GwentController {
     }
 
     pub async fn get_specific_deck(&self, id: &str) {
-        let _probably_cached = todo!();
-        let json = self.api.get_deck(id).await.unwrap()
-            .json::<Deck>
+        let parsed_id: u32 = id
+            .trim()                       // optional: remove whitespace
+            .parse::<u32>()               // tries to parse as base‑10 integer
+            .expect("Invalid deck ID");
+
+        let json = self.api.get_deck(parsed_id).await.unwrap()
+            .json::<Deck>();
     }
 }
